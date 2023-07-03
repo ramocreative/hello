@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/Assets/BG/Desktop\ Background\ FHD.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #09d639;
+    border-radius: 100px;
+    color: #09d639;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    transform: scale(1.4);
+    background-color: #09d639;
+    color: #131b23;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4 {
+    font-weight: 600;
+    cursor: default;
+}
+
+p {
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    font-size: 60px;
+}
+
+/*-------------------------- BACK-TO-TOP-BUITTON --------------------------*/
+
+.btt-btn {
+    position: fixed;
+    bottom: 72px;
+    right: 140px;
+    font-size: 45px;
+    color: #808080;
+    border-radius: 999px;
+    z-index: 999;
+}
+
+.btt-btn i {
+    background-color: #ffffff0f;
+    border-radius: 50px;
+}
+
+/*-------------------------- HEADER & NAV --------------------------*/
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-close {
+    display: none;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background .4s;
+}
+
+.nav {
+    height: 136px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 57px;
+    margin-right: 194px;
+}
+
+.nav-logo img {
+    height: 46px;
+    filter: brightness(0) invert(1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    text-transform: uppercase;
+    font-size: 16px;
+    flex: 1;
+    width: 100%;
+}
+
+.nav-link {
+    color: #808080;
+    transition: 0.3s ease;
+    display: flex;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    transform: scale(1.4);
+    border-bottom: solid 1px #09d639;
+    transform: scale(1.4);
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-right: 140px;
+}
+
+.contact-link a {
+    background-color: rgb(255, 255, 255, 10%);
+    padding: 6px;
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-link a:hover {
+    background-color: #09d639;
+    transform: scale(1.4);
+}
+
+.ri-mail-fill,
+.ri-whatsapp-fill {
+    font-size: 24px;
+}
+
+/*-------------------------- FOOTER --------------------------*/
+
+footer {
+    width: 100%;
+    padding: 72px 278px;
+    background-color: #000000;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 22%;
+    padding: 10px;
+}
+
+.col:nth-child(2) {
+    flex-basis: 15%;
+}
+
+.col h3 {
+    width: fit-content;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.col p {
+    color: #808080;
+    line-height: 26px;
+}
+
+.col a {
+    color: #808080;
+    width: fit-content;
+    line-height: 26px;
+    transition: 0.3s ease;
+}
+
+.col a:hover {
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #808080;
+    margin: 24px auto;
+}
+
+.copyright {
+    text-align: center;
+    color: #808080;
+}
+
+/*----------------------------------------------------*/
+
+/*-------------------------- TIJLTIL-GAMERS-PAGE --------------------------*/
+
+/*----------------------------------------------------*/
+
+/*-------------------------- PROJECT-OVERVIEW --------------------------*/
+
+.projet-overview {
+    background: url(/Assets/TiJLTiL-Gamers/TiJLTiL\ Gamers\ -\ Background.gif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 278px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.projet-overview-overly {
+    background-color: rgb(19, 27, 35, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.projet-overview-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 250px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    right: 500px;
+    left: 278px;
+}
+
+.projet-overview-data h1 {
+    font-size: 72px;
+    margin-bottom: 36px;
+    color: #f1f2f2;
+}
+
+.projet-overview-data h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #f1f2f2;
+}
+
+.projet-overview-data p {
+    font-size: 16px;
+    line-height: 29px;
+    color: #808285;
+}
+
+.projet-overview-labels {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 36px 18px 36px -2px;
+}
+
+.projet-overview-labels label {
+    font-size: 16px;
+    margin-right: 18px;
+    background-color: #00000054;
+    padding: 18px 36px;
+    border-radius: 100px;
+}
+
+.projet-overview-btns-container {
+    position: absolute;
+    bottom: 100px;
+}
+
+/*-------------------------- PROJECT-PREVIEW --------------------------*/
+
+.projet-preview-container {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projet-preview-container img {
+    width: 100%;
+}
