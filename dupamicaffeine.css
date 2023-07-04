@@ -249,7 +249,7 @@ hr {
 /*-------------------------- PROJECT-OVERVIEW --------------------------*/
 
 .projet-overview {
-    background: url(/Assets/Dupamicaffeine/dupamicaffeine.gif) no-repeat;
+    background: url(Assets/Dupamicaffeine/dupamicaffeine.gif) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
